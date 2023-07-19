@@ -177,10 +177,12 @@ main{
     gap: 20px;
 }
 footer{
-    width: 100%;
+    text-align: center;
+    max-width: 1920px;
     background-color: #878390;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 540px;
 }
 .footer-container{
     align-items: center;
@@ -191,19 +193,18 @@ footer{
     display: flex;
     text-align: center;
     gap: 40px;
-    margin-left: 750px;
     color: #FFF;
      font-size: 18px;
      font-weight: 600;
+
 }
 .list-div{
    display: flex;
    gap: 40px;
-   margin-left: 900px;
+   
 }
 .logo-container2{
     display: flex;
-    margin-left: 1000px;
     gap: 10px;
 
 }
@@ -222,11 +223,25 @@ footer{
     header{
         padding: 10px;
     }
-    .nav-container, .banner, .container2 {
+    .nav-container, .banner, .container2, 
+    .img-section1 {
         flex-direction: column;
     }
     .gamer-container > ul {
         flex-direction: column;
     }
+    .hard-section{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+  }
+  @media screen and (min-width:576) and (max-width:960) {
+    header{
+        padding: 25px;
+    }
+    
+    .nav-container, .banner, .container2, 
+.img-section1 {
+    flex-direction: column;
+}
   }
